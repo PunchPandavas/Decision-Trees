@@ -1,5 +1,6 @@
 cows = {'Maggie': 3, 'Herman': 7, 'Betsy': 9, 'Oreo': 6, 'Moo Moo': 3, 'Milkshake': 2, 'Millie': 5, 'Lola': 2, 'Florence': 2, 'Henrietta': 9}
-# Problem 1
+limit = 10
+
 def greedy_cow_transport(cows,limit=10):
     """
     Uses a greedy heuristic to determine an allocation of cows that attempts to
@@ -43,6 +44,6 @@ def greedy_cow_transport(cows,limit=10):
     
     return greedy_recursive(cows,limit,overall_trip)
 # End of code for greedy search
+
 print(cows)
-limit = 10
-print(greedy_cow_transport(cows, limit))
+print('Output from Greedy:',greedy_cow_transport(cows, limit))
